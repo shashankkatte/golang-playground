@@ -26,10 +26,10 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X]  Creating a new Dec in our APP
 - [X] Slice Range Syntax
 - [X] Multiple return Values
-- [ ] Byte Slices
-- [ ] Convert Deck to string
-- [ ] Joining Strings
-- [ ] Saving data to local storage
+- [X] Byte Slices
+- [X] Convert Deck to string
+- [X] Joining Strings
+- [X] Saving data to local storage
 - [ ] Reading from Harddrive
 - [ ] Error Handling
 - [ ] Shuffling Deck
@@ -85,3 +85,15 @@ for _,suit := range cardSuits {
 		}
 	}
 ```
+
+## Byte Slice
+
+Byte slice is a string of characters, but ascii characters. Checkout [asciitable.com](https://www.asciitable.com)
+
+## Type conversion
+
+Take one type of value and change it to another type. 
+
+We can change the string - hi there like this to byte slice 
+`[]byte("Hi there!")`
+
