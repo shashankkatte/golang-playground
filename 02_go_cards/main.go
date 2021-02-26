@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// Declaring and assigng a string variable
 	//  Var is keyword to declare variables
@@ -17,14 +15,15 @@ func main() {
 	// fmt.Println(card)
 
 	//  This is how you declare a slice
-	cards := []string{"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()}
 
 	//  Add an element to end of clice. It returns a new slice
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
+	cards.print()
 }
 
 // Defining a function in Go. Observe that we need to explicitly say what is the return type
