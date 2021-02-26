@@ -16,11 +16,11 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 
 6. **newDeckFromFile** Load a list of cards from the local machine
 
-## Concepts Covered 
+## Concepts Covered
 
 - [X] Variable declarations
 - [X] Function and return types
-- [ ] Slices and For loops
+- [X] Slices and For loops
 - [ ] OO vs Go Approach
 - [ ] Custom Type declarations
 - [ ]  Creating a new Dec in our APP
@@ -38,3 +38,13 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [ ] Writing useful tests
 - [ ] Asserting elements in a Slice
 - [ ] Testing file IO
+
+## Common data types in Go
+
+### Array
+
+It is a fixed length array, very basic datastructure it cant shrink or grow. Every element should be an identical type
+
+### Slice
+
+This is like an array but can grow and shrink. Evevry element should be an identical type.
