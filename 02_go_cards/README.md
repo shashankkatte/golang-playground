@@ -15,3 +15,26 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 5. **saveToFile** Save a list of cards to file on local storage
 
 6. **newDeckFromFile** Load a list of cards from the local machine
+
+## Concepts Covered 
+
+- [ ] Variable declarations
+- [ ] Function and return types
+- [ ] Slices and For loops
+- [ ] OO vs Go Approach
+- [ ] Custom Type declarations
+- [ ]  Creating a new Dec in our APP
+- [ ] Slice Range Syntax
+- [ ] Multiple return Values
+- [ ] Byte Slices
+- [ ] Convert Deck to string
+- [ ] Joining Strings
+- [ ] Saving data to local storage
+- [ ] Reading from Harddrive
+- [ ] Error Handling
+- [ ] Shuffling Deck
+- [ ] Random number generation
+- [ ] Testing in Go
+- [ ] Writing useful tests
+- [ ] Asserting elements in a Slice
+- [ ] Testing file IO
