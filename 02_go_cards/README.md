@@ -48,3 +48,14 @@ It is a fixed length array, very basic datastructure it cant shrink or grow. Eve
 ### Slice
 
 This is like an array but can grow and shrink. Evevry element should be an identical type.
+
+## OO vs Go Approach
+
+So normally in an Object oriented language like Java you would have clasees and methods associated. 
+
+However in go there is no concept of Classes. If you need a deck of cards you define Cards
+
+We extend a base type to kinda make it work as class with associated functions.
+
+> Functions with a receiver
+
