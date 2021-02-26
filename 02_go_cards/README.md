@@ -23,8 +23,8 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X] Slices and For loops
 - [X] OO vs Go Approach
 - [X] Custom Type declarations
-- [ ]  Creating a new Dec in our APP
-- [ ] Slice Range Syntax
+- [X]  Creating a new Dec in our APP
+- [X] Slice Range Syntax
 - [ ] Multiple return Values
 - [ ] Byte Slices
 - [ ] Convert Deck to string
