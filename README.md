@@ -1,2 +1,5 @@
-# golang-playground
-A DIY exercise repo for simple golang tutorials and practice codelets.
+# Golang Playground
+
+A bunch of exercises, demo codelets and simple apps to take you from basics to expert
+
+
