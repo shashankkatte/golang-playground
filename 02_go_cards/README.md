@@ -19,7 +19,7 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 ## Concepts Covered 
 
 - [X] Variable declarations
-- [ ] Function and return types
+- [X] Function and return types
 - [ ] Slices and For loops
 - [ ] OO vs Go Approach
 - [ ] Custom Type declarations

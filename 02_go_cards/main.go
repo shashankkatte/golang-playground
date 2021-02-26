@@ -9,10 +9,16 @@ func main() {
 	// var card string = "Ace of Spades"
 
 	//  A short hand way of declaring and assigning new variables where the type is inferred by Go
-	card := "Ace of Spades"
+	card := newCard()
 
 	// This how you assign values to existing variables with = sign
-	card = "Five of Diamonds"
+	// card = "Five of Diamonds"
 
 	fmt.Println(card)
+}
+
+// Defining a function in Go. Observe that we need to explicitly say what is the return type
+// Here it returns a string
+func newCard() string {
+	return "Five of Diamonds"
 }
