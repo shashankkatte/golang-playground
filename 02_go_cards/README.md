@@ -25,7 +25,7 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X] Custom Type declarations
 - [X]  Creating a new Dec in our APP
 - [X] Slice Range Syntax
-- [ ] Multiple return Values
+- [X] Multiple return Values
 - [ ] Byte Slices
 - [ ] Convert Deck to string
 - [ ] Joining Strings
