@@ -59,3 +59,29 @@ We extend a base type to kinda make it work as class with associated functions.
 
 > Functions with a receiver
 
+## Receiver functions
+
+```go
+
+func (d deck) print()  {
+	for i,card := range d {
+		fmt.Println(i, card)
+	}
+}
+```
+
+Here we are saying function print is acceble to any instance of deck
+
+Here d is the actual copy of the deck we are working on, kinda like a this or reference to current instance
+
+## Looping and index
+
+In go when you declare a variable you gotta use it. In case of loops like for loop you will come across that you declarea index but dont use it. So if you have a variable that you dont care about you just use an _ like so 
+
+```go
+for _,suit := range cardSuits {
+		for _,value := range cardValues {
+			cards = append(cards, value + " of "+suit)
+		}
+	}
+```
