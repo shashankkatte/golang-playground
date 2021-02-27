@@ -31,9 +31,9 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X] Joining Strings
 - [X] Saving data to local storage
 - [X] Reading from Harddrive
-- [ ] Error Handling
-- [ ] Shuffling Deck
-- [ ] Random number generation
+- [X] Error Handling
+- [X] Shuffling Deck
+- [X] Random number generation
 - [ ] Testing in Go
 - [ ] Writing useful tests
 - [ ] Asserting elements in a Slice
