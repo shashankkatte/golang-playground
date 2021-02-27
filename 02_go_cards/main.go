@@ -11,6 +11,6 @@ func main() {
 	// greeting := "Hi There!"
 	// fmt.Println([]byte(greeting))
 
-	cards := newDeck()
-	cards.saveToFile("my_cards")
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 }

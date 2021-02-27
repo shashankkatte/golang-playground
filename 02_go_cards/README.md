@@ -30,7 +30,7 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X] Convert Deck to string
 - [X] Joining Strings
 - [X] Saving data to local storage
-- [ ] Reading from Harddrive
+- [X] Reading from Harddrive
 - [ ] Error Handling
 - [ ] Shuffling Deck
 - [ ] Random number generation
