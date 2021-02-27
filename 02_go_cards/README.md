@@ -97,3 +97,10 @@ Take one type of value and change it to another type.
 We can change the string - hi there like this to byte slice 
 `[]byte("Hi there!")`
 
+## Testing with go
+
+Go testing is very different from mocha, jasmine, selenium etc
+
+To make a test, create a new file ending in `_test.go`
+
+To run the tests in a package, run the command `go test`

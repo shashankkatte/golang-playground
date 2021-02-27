@@ -10,14 +10,14 @@ import (
 )
 
 // Create a new type of 'deck'
-//  A slice of strings
+// which is a slice of strings
 type deck []string
 
 func newDeck() deck {
 	cards := deck{}
 
-	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Cloves"}
-	cardValues := []string{"Ace", "Two", "There", "Four"}
+	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
+	cardValues := []string{"Ace", "Two", "Three", "Four"}
 
 	for _, suit := range cardSuits {
 		for _, value := range cardValues {
@@ -34,21 +34,23 @@ func (d deck) print() {
 	}
 }
 
-func deal(d deck, handsize int) (deck, deck) {
-	return d[:handsize], d[handsize:]
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 }
 
 func (d deck) toString() string {
 	return strings.Join([]string(d), ",")
 }
 
-func (d deck) saveToFile(fileName string) error {
-	return ioutil.WriteFile(fileName, []byte(d.toString()), 0666)
+func (d deck) saveToFile(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
 }
 
-func newDeckFromFile(fileName string) deck {
-	bs, err := ioutil.ReadFile(fileName)
+func newDeckFromFile(filename string) deck {
+	bs, err := ioutil.ReadFile(filename)
 	if err != nil {
+		// Option #1 - log the error and return a call to newDeck()
+		// Option #2 - Log the error and entirely quit the program
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
@@ -60,6 +62,7 @@ func newDeckFromFile(fileName string) deck {
 func (d deck) shuffle() {
 	source := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(source)
+
 	for i := range d {
 		newPosition := r.Intn(len(d) - 1)
 
