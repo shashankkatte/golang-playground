@@ -34,10 +34,10 @@ This is a simple go app that simulates playing with real deck of playing cards. 
 - [X] Error Handling
 - [X] Shuffling Deck
 - [X] Random number generation
-- [ ] Testing in Go
-- [ ] Writing useful tests
-- [ ] Asserting elements in a Slice
-- [ ] Testing file IO
+- [X] Testing in Go
+- [X] Writing useful tests
+- [X] Asserting elements in a Slice
+- [X] Testing file IO
 
 ## Common data types in Go
 

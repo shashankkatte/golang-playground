@@ -6,21 +6,24 @@
 
 Go was not created by some hot-shot startup, or like a fad! It was created out of necessity to adress specific problems with existing programming languages. Its created by some of the industries well known engineers. They have drwan from thrie experience and working with many languages to create GO.
 
-1. Ken Thompson _ the creator of C, Unix and UTF-8
+1. Ken Thompson \_ the creator of C, Unix and UTF-8
 2. Rob pike - Unix UTF8
 3. Robert Griesemer - Hotspot JVM
 
 Go is not just a google project through the creators worked at Google at some point. Its community driven.
 
 ### Why Create GO?
-There wasn't one single programming language which could satisfy all 3 of 
+
+There wasn't one single programming language which could satisfy all 3 of:
+
 1. Effecient compilation
 2. Efficient execution
 3. Ease of programming
 
 Go is an effort to fill this void.
 
-### Characteristics of GO 
+### Characteristics of GO
+
 1. Strong, static type system - find bugs while you code, compiler helps you figure the type.
 2. C inspired syntax ( well almost) - You'll see simelaties if you come from C# or Java. This was an effort to reduce visual clutter of code
 3. Multi Paradigm ( procedural, OOP) - Go lets you pick the paradigm based on context rather than imposing it right at the door.
@@ -30,6 +33,7 @@ Go is an effort to fill this void.
 7. Single binary output(mostly) - By default you get a single binary making deployment easy, there is a also plugin eco system and shared lib to share.
 
 ### Timeline of GO
+
 - 2007 - Start of design, when the 3 creators came together
 - 2009 - Google publicly announced GO
 - 2012 - Version 1.0 release
@@ -55,6 +59,7 @@ The philosophy and values that GO is built around:
 Lets look at each of these in some more detail
 
 #### How GO embraces simplicity
+
 Most of the languages start with this but get out of control as more features are added.
 
 if you have used other languages like JAva or C++ you would have seen these operators `++i` and `i++` The post incrementa nd pre increment operators.
@@ -65,7 +70,8 @@ you'd see something like this while analysing something and then you have to gue
 println(i++);
 println(++i);
 ```
->So what does GO do with this? in GO the increment and decrement operators are statements and not expressions and not an expression. What this means is this is how Go teats the code.
+
+> So what does GO do with this? in GO the increment and decrement operators are statements and not expressions and not an expression. What this means is this is how Go teats the code.
 
 ```Go
 i := 1
@@ -76,20 +82,20 @@ println(i)
 ```
 
 So in go we just have `i++` This solves the confusion. GO is more verbose and intentional, this helps making the code we write more cearler to communicate.
-
 **Also the looping constructs in Go is simpler**
 
 All you have to remember is just _one_ keyword `for`
 
 The `for` loop used in different forms will work as the same way the while and infinite loops work in other languages
 
-Now this is like any other for loop in other languages, thenormal for loop 
+Now this is like any other for loop in other languages, thenormal for loop
 
 ```go
 for i:=0; i<5;i++
 ```
 
-If want a while loop kind of behavior we just use 
+If want a while loop kind of behavior we just use
+
 ```go
 for i < 5
 ```
@@ -99,29 +105,36 @@ and if we need infinite loop we just use the keyword
 ```go
 for
 ```
+
 for looping over a collection we use
 
 ```go
 for user := range users
 ```
-> If you are looping in go you just use `for` loop thats it.
 
+> If you are looping in go you just use `for` loop thats it.
 
 #### Network aware and concurrent Apps
 
 Out of the box GO has capability
 
 1. net and net/http packages: Core standard library for network aware features
-  - Create webservers using standard library
+
+- Create webservers using standard library
+
 2. goroutines: light weight treads to manage massive concurrency
-  - Start thousands of concurrent tasks with minimal resources
-  - Goroutines are abstraction over processor threads
+
+- Start thousands of concurrent tasks with minimal resources
+- Goroutines are abstraction over processor threads
+
 3. Channels: Built in support for communitation with concurrency (CSP) in a threadsafe way
-  - Safely communicate between concurrent tasks.
+
+- Safely communicate between concurrent tasks.
 
 #### GO's out of box experience
 
 Many languages require an extinsive amount of setup (external libraries and packages) in order to provide a basic development setup. The GO standard library itself has sufficient support to be up and running
+
 - String Manipulation
 - data compression
 - File manipulation
@@ -130,6 +143,7 @@ Many languages require an extinsive amount of setup (external libraries and pack
 - Many many more
 
 The Go CLI which is a simple command line tool packs some powerful features to help you build test and deploy apps
+
 - project initialization
 - build
 - Code generation
@@ -147,12 +161,13 @@ With most of the prevalent programming languages , the apps have to me highly cu
 
 with GO its baked in and trivial to impliment. just by changing two paramenters `GOOS` and `GOARCH` we can generate a build ofr an OS.
 
-For e.g for windows 
+For e.g for windows
 
 ```go
 GOOS = windows
 GOARCH =amd64
 ```
+
 For os x
 
 ```go
@@ -161,6 +176,7 @@ GOARCH =amd64
 ```
 
 or for android
+
 ```go
 GOOS = android
 GOARCH =arm
@@ -189,14 +205,15 @@ Top 3 areas where GO shines
 - DevOPs: GO is huge in DevOPs space, Doker is built on GO
 
 Up and coming
-- GUI / THick-Client: 
+
+- GUI / THick-Client:
 - Machine Learning: The high-performance nature and trivial concurrency built with GO is luring more and more to look at it vs Python and R
 
 GO is still fairly a new language and its use cases are growing as the community grows.
 
+## Sample Applications
 
-## Tutorial
-A bunch of exercises, demo codelets and simple apps to take you from basics to expert
+A bunch of exercises, demo codelets and simple apps are included to take you from basics to expert
 
 ## Hello World
 
@@ -208,5 +225,4 @@ The intention of this very simple hellow world is well... its a hello world!
 
 To dig deeper into GO lang concepts we will be building out a simple app that deals a deck of cards
 
-Refer to the souece code inside **02_go_cards** it comes with its own README for deeper explanations.
-
+Refer to the source code inside **02_go_cards** it comes with its own README for deeper explanations.
