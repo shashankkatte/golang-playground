@@ -211,6 +211,40 @@ Up and coming
 
 GO is still fairly a new language and its use cases are growing as the community grows.
 
+## Installing Go
+
+Installing go is very straight forward head to the link below and select your operating system. Just select the defaults on installer and installation should complete in seconds ( after downloading!).
+
+Download latest Go installer from [here](https://golang.org/dl/)
+
+once the installation completes, check if the installation has completed successfuly by enetering this command in your terminal
+
+```shell
+go version
+```
+
+you should see an output similar to this with the go version installed
+
+```shell
+go version go1.16.3 darwin/amd64
+```
+
+This means you are reay to GO!
+
+> If you are curious to see what Go tools has to offer just type `go` in the termial and hit return/enter and see what is printed. hint: there are bunch of things can do with just command line. All the critical tools are pre packaged in the go command.
+
+## Setting up the Dev Environment
+
+### Setup your code editor
+
+You can use the editor of your choice, but if you ask me i would say use VS code as it has some pretty good support for go
+
+Download latest version of VS code from [here](https://code.visualstudio.com/download). Ya its Free!
+
+Once you have it installed. open it and on the left hand side go to **Extensions** here search for "go". The first one that pops up ( made by google) is the one you need. install it.
+
+Next hit `cmd + shift + p` or `ctrl +shift + p` to bring up quick access and select/search for "Go: Install/update tools", select it, next select the checkbox on left at the top to select all and click OK. this will install all the required dependencies/packages to make yur GO development enjoyable.
+
 ## Sample Applications
 
 A bunch of exercises, demo codelets and simple apps are included to take you from basics to expert
