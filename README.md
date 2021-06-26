@@ -25,7 +25,7 @@ Go is an effort to fill this void.
 ### Characteristics of GO
 
 1. **Strong, static type system** - find bugs while you code, compiler helps you figure the type.
-2. **C inspired syntax ( well almost)** - You'll see simelaties if you come from C# or Java. This was an effort to reduce visual clutter of code
+2. **C inspired syntax ( well almost)** - You'll see similarities if you come from C# or Java. This was an effort to reduce visual clutter of code. Its a c inspired syntax.
 3. **Multi Paradigm ( procedural, OOP)** - Go lets you pick the paradigm based on context rather than imposing it right at the door.
 4. **Garbage collected** - You dont have to manage memory on your own. Over years Go has optimised GC that it has no impact on performance
 5. **Fully Compiled** - Unlike JS ( interpreted at runtime) or Java ( intermediate Bytecode), Go apps are fully compiled down to executable binary giving best performance.
