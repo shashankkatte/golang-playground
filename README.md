@@ -4,11 +4,11 @@
 
 ### Who created GO?
 
-Go was not created by some hot-shot startup, or like a fad! It was created out of necessity to adress specific problems with existing programming languages. Its created by some of the industries well known engineers. They have drwan from thrie experience and working with many languages to create GO.
+Go was not created by some hot-shot startup, or like a fad! It was created out of necessity to address specific problems with existing programming languages. Its created by some of the industries well known engineers. They have drawan from their experience and working with many languages to create GO.
 
-1. Ken Thompson \_ the creator of C, Unix and UTF-8
-2. Rob pike - Unix UTF8
-3. Robert Griesemer - Hotspot JVM
+1. Ken Thompson => the creator of C, Unix and UTF-8
+2. Rob pike => Unix UTF8
+3. Robert Griesemer => Hotspot JVM
 
 Go is not just a google project through the creators worked at Google at some point. Its community driven.
 
@@ -24,13 +24,13 @@ Go is an effort to fill this void.
 
 ### Characteristics of GO
 
-1. Strong, static type system - find bugs while you code, compiler helps you figure the type.
-2. C inspired syntax ( well almost) - You'll see simelaties if you come from C# or Java. This was an effort to reduce visual clutter of code
-3. Multi Paradigm ( procedural, OOP) - Go lets you pick the paradigm based on context rather than imposing it right at the door.
-4. Garbage collected - You dont have to manage memory on your own. Over years Go has optimised GC that it has no impact on performance
-5. Fully Compiled - Unlike JS ( interpreted at runtime) or Java ( intermediate Bytecode), Go apps are fully compiled down to executable binary giving best performance.
-6. Rapid compilation - A boon to developers who are now using TDD where they need to write and run tests while developing features
-7. Single binary output(mostly) - By default you get a single binary making deployment easy, there is a also plugin eco system and shared lib to share.
+1. **Strong, static type system** - find bugs while you code, compiler helps you figure the type.
+2. **C inspired syntax ( well almost)** - You'll see simelaties if you come from C# or Java. This was an effort to reduce visual clutter of code
+3. **Multi Paradigm ( procedural, OOP)** - Go lets you pick the paradigm based on context rather than imposing it right at the door.
+4. **Garbage collected** - You dont have to manage memory on your own. Over years Go has optimised GC that it has no impact on performance
+5. **Fully Compiled** - Unlike JS ( interpreted at runtime) or Java ( intermediate Bytecode), Go apps are fully compiled down to executable binary giving best performance.
+6. **Rapid compilation** - A boon to developers who are now using TDD where they need to write and run tests while developing features
+7. **Single binary output(mostly)** - By default you get a single binary making deployment easy, there is a also plugin eco system and shared lib to share.
 
 ### Timeline of GO
 
@@ -50,11 +50,11 @@ If you wanna know who in the world is using it check [https://github.com/golang/
 
 The philosophy and values that GO is built around:
 
-- Simplicity: All around go the wat its built, the syntax etc is built around simplicity, doesnt mean easy or elementary but easy to approach and use.
-- Network aware and concurrent Apps: Many of the existing languages like python, Java, C++ were built before we had multi core CPUs and internet as main stream, Go is designed with this out-of-the-box
-- Out-of-box Experience: You dont have to go to different places to get all you need to develop apps, its right there right at the beginning.
-- Cross platform: By nature its cross-platform, as more and more we are not constrained by specific platform
-- Backward compatibility: GO is being activly developed with focus on backward compatibility
+- **Simplicity**: All around go the wat its built, the syntax etc is built around simplicity, doesnt mean easy or elementary but easy to approach and use.
+- **Network aware and concurrent Apps**: Many of the existing languages like python, Java, C++ were built before we had multi core CPUs and internet as main stream, Go is designed with this out-of-the-box
+- **Out-of-box Experience**: You dont have to go to different places to get all you need to develop apps, its right there right at the beginning.
+- **Cross platform**: By nature its cross-platform, as more and more we are not constrained by specific platform
+- **Backward compatibility**: GO is being activly developed with focus on backward compatibility
 
 Lets look at each of these in some more detail
 
@@ -62,16 +62,16 @@ Lets look at each of these in some more detail
 
 Most of the languages start with this but get out of control as more features are added.
 
-if you have used other languages like JAva or C++ you would have seen these operators `++i` and `i++` The post incrementa nd pre increment operators.
+if you have used other languages like Java or C++ you would have seen these operators `++i` and `i++` The post increment and pre increment operators.
 
-you'd see something like this while analysing something and then you have to guess what these burried increment operators actually do, and can confuse you leading to suble bugs.
+you'd see something like this while analysing something and then you have to guess what these burried increment operators actually do, and can confuse you leading to subtle bugs.
 
 ```c++
 println(i++);
 println(++i);
 ```
 
-> So what does GO do with this? in GO the increment and decrement operators are statements and not expressions and not an expression. What this means is this is how Go teats the code.
+> So what does GO do with this? in GO the increment and decrement operators are statements and not expressions and not an expression. What this means is this is how Go treats the code.
 
 ```Go
 i := 1
@@ -118,16 +118,16 @@ for user := range users
 
 Out of the box GO has capability
 
-1. net and net/http packages: Core standard library for network aware features
+1.**net and net/http packages**: Core standard library for network aware features
 
 - Create webservers using standard library
 
-2. goroutines: light weight treads to manage massive concurrency
+2.**goroutines**: light weight treads to manage massive concurrency
 
 - Start thousands of concurrent tasks with minimal resources
 - Goroutines are abstraction over processor threads
 
-3. Channels: Built in support for communitation with concurrency (CSP) in a threadsafe way
+3.**Channels**: Built in support for communitation with concurrency (CSP) in a threadsafe way
 
 - Safely communicate between concurrent tasks.
 
