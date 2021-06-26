@@ -30,31 +30,34 @@ Go is an effort to fill this void.
 4. **Garbage collected** - You dont have to manage memory on your own. Over years Go has optimised GC that it has no impact on performance
 5. **Fully Compiled** - Unlike JS ( interpreted at runtime) or Java ( intermediate Bytecode), Go apps are fully compiled down to executable binary giving best performance.
 6. **Rapid compilation** - A boon to developers who are now using TDD where they need to write and run tests while developing features
-7. **Single binary output(mostly)** - By default you get a single binary making deployment easy, there is a also plugin eco system and shared lib to share.
+7. **Single binary output(mostly)** - By default you get a single binary making deployment easy, there is also a plugin eco system and shared lib to share.
 
 ### Timeline of GO
 
 - 2007 - Start of design, when the 3 creators came together
 - 2009 - Google publicly announced GO
 - 2012 - Version 1.0 release
-- Feb 2021 - GO 1.16 (latest as of this writing)
+- Feb 2021 - GO 1.16.5 (latest as of this writing)
 
 Go Has seen a timely release alsmost every 6 months since verion 1 came out in March of 2012. There is a discussion on version 2 which is in discussion phase. There is no confiremed timeline on version 2 yet. The community is focussed on making gsure go solves problems elegeanty, simply and well so the community is not rushing into the next version.
 
 ### Who's using GO in production?
 
-Almost any big company you can think of is. Its most well suited for web based applications and APIs. think of companies like GOogle, Amazon, Digital Ocean, Netflix, Facebook, Cloudflare. Docker is actually written in GO.
+Almost any big company you can think of is. Its most well suited for web based applications and APIs. think of companies like Google, Amazon, Digital Ocean, Netflix, Facebook, Cloudflare. 
+
+Docker is actually written in GO.
+
 If you wanna know who in the world is using it check [https://github.com/golang/go/wiki/GoUsers](https://github.com/golang/go/wiki/GoUsers)
 
 ### How can GO help you?
 
 The philosophy and values that GO is built around:
 
-- **Simplicity**: All around go the wat its built, the syntax etc is built around simplicity, doesnt mean easy or elementary but easy to approach and use.
+- **Simplicity**: All around GO the way its built, the syntax etc is built around simplicity, doesnt mean easy or elementary but easy to approach and use.
 - **Network aware and concurrent Apps**: Many of the existing languages like python, Java, C++ were built before we had multi core CPUs and internet as main stream, Go is designed with this out-of-the-box
 - **Out-of-box Experience**: You dont have to go to different places to get all you need to develop apps, its right there right at the beginning.
 - **Cross platform**: By nature its cross-platform, as more and more we are not constrained by specific platform
-- **Backward compatibility**: GO is being activly developed with focus on backward compatibility
+- **Backward compatibility**: GO is being actively developed with focus on backward compatibility as the language continues to grow and evolve.
 
 Lets look at each of these in some more detail
 
@@ -67,21 +70,23 @@ if you have used other languages like Java or C++ you would have seen these oper
 you'd see something like this while analysing something and then you have to guess what these burried increment operators actually do, and can confuse you leading to subtle bugs.
 
 ```c++
+i = 1;
 println(i++);
 println(++i);
 ```
 
-> So what does GO do with this? in GO the increment and decrement operators are statements and not expressions and not an expression. What this means is this is how Go treats the code.
+> So what does GO do with this? in GO the increment and decrement operators are statements and not expressions. What this means is this is how Go treats the code.
 
 ```Go
 i := 1
 i++
-println(i)
+println(i) //2
 i++
-println(i)
+println(i) //3
 ```
 
-So in go we just have `i++` This solves the confusion. GO is more verbose and intentional, this helps making the code we write more cearler to communicate.
+So in go we just have `i++` This solves the confusion. GO is more verbose and intentional, this helps making the code we write more clear to communicate.
+
 **Also the looping constructs in Go is simpler**
 
 All you have to remember is just _one_ keyword `for`
@@ -120,18 +125,18 @@ Out of the box GO has capability
 
 1.**net and net/http packages**: Core standard library for network aware features
 
-- Create webservers using standard library
+- Create webservers using only the standard library
 
-2.**goroutines**: light weight treads to manage massive concurrency
+2.**goroutines**: light weight threads to manage massive concurrency
 
 - Start thousands of concurrent tasks with minimal resources
 - Goroutines are abstraction over processor threads
 
-3.**Channels**: Built in support for communitation with concurrency (CSP) in a threadsafe way
+3.**Channels**: Built in support for communication with concurrency (CSP) in a threadsafe way
 
 - Safely communicate between concurrent tasks.
 
-#### GO's out of box experience
+#### GO's Optimized out of box experience
 
 Many languages require an extinsive amount of setup (external libraries and packages) in order to provide a basic development setup. The GO standard library itself has sufficient support to be up and running
 
@@ -200,13 +205,13 @@ So what are the perfect applications of GO?
 
 Top 3 areas where GO shines
 
-- Web services: one of the primary and most wide spread use case, more often you will see API built on Go or GO backend in simple terms
-- Web Applications : Similar to web services, web applications are also relying on GO more often
-- DevOPs: GO is huge in DevOPs space, Doker is built on GO
+- **Web services**: one of the primary and most wide spread use case, more often you will see API built on Go or GO backend in simple terms
+- **Web Applications** : Similar to web services, web applications are also relying on GO more often
+- **DevOPs**: GO is huge in DevOPs space, Doker is built on GO
 
 Up and coming
 
-- GUI / THick-Client:
+- GUI / Thick-Client:
 - Machine Learning: The high-performance nature and trivial concurrency built with GO is luring more and more to look at it vs Python and R
 
 GO is still fairly a new language and its use cases are growing as the community grows.
@@ -226,7 +231,7 @@ go version
 you should see an output similar to this with the go version installed
 
 ```shell
-go version go1.16.3 darwin/amd64
+go version go1.16.5 darwin/amd64
 ```
 
 This means you are reay to GO!
@@ -237,26 +242,28 @@ This means you are reay to GO!
 
 ### Setup your code editor
 
-You can use the editor of your choice, but if you ask me i would say use VS code as it has some pretty good support for go
+You can use the editor of your choice, but if you ask me I would say use VS code as it has some pretty good support for GO
 
 Download latest version of VS code from [here](https://code.visualstudio.com/download). Ya its Free!
 
 Once you have it installed. open it and on the left hand side go to **Extensions** here search for "go". The first one that pops up ( made by google) is the one you need. install it.
 
-Next hit `cmd + shift + p` or `ctrl +shift + p` to bring up quick access and select/search for "Go: Install/update tools", select it, next select the checkbox on left at the top to select all and click OK. this will install all the required dependencies/packages to make yur GO development enjoyable.
+Next hit `cmd + shift + p` or `ctrl +shift + p` to bring up quick access and select/search for "Go: Install/update tools", select it, next select the checkbox on left at the top to select all and click OK. this will install all the required dependencies/packages to make your GO development enjoyable.
 
 ## Sample Applications
 
 A bunch of exercises, demo codelets and simple apps are included to take you from basics to expert
 
-## Hello World
+### Hello World - CLI application
 
 The obligatory hello world App is in the **01_Hello_World** Folder with self explanatory comments.
 
-The intention of this very simple hellow world is well... its a hello world!
+The intention of this very simple hello world is well... its a hello world!
 
-## Card Dealing APP
+### Card Dealing APP
 
 To dig deeper into GO lang concepts we will be building out a simple app that deals a deck of cards
 
 Refer to the source code inside **02_go_cards** it comes with its own README for deeper explanations.
+
+## Static Web-service
