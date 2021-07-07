@@ -250,6 +250,19 @@ Once you have it installed. open it and on the left hand side go to **Extensions
 
 Next hit `cmd + shift + p` or `ctrl +shift + p` to bring up quick access and select/search for "Go: Install/update tools", select it, next select the checkbox on left at the top to select all and click OK. this will install all the required dependencies/packages to make your GO development enjoyable.
 
+### Go Module
+
+You need to create a module in go, much like a workplace to house all your project code.
+
+> As of Go 1.13 and beyond modules are the official way to organize your source code
+
+To create a module use the go mod command at the root of your source code folder/directory
+`$ go mod init <nameofmodule>`
+
+example
+
+`$ go mod init github.com/shashankkatte/hello-go`
+
 ## Sample Applications
 
 A bunch of exercises, demo codelets and simple apps are included to take you from basics to expert

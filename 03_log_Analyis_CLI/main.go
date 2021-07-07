@@ -14,7 +14,7 @@ func main() {
 	level := flag.String("level", "ERROR", "Log level to search for. Options are DEBUG, INFO, ERROR, and CRITICAL")
 
 	flag.Parse()
-
+	// There are no exceptions in go we 
 	f, err := os.Open(*path)
 	if err != nil {
 		log.Fatal(err) 
